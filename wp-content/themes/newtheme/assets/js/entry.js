@@ -58,10 +58,12 @@ var Site = {
 				fn.apply(context, args);
 			}, delay);
 		};
-	}
+	},
+
 };
 
 $(document).ready(function() {
 	Site.init();
+	Site.slick();
 });
 // Chain any click events here

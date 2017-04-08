@@ -5,6 +5,7 @@
 html {
 	@include box-sizing(border-box);
 	font-family: $font-default;
+	margin-top: 0px !important;
 	// Root for rems
 		// 62.5% takes 16px (browser default size for medium text) down to 10px
 		// ref: http://clagnut.com/blog/348/
@@ -36,19 +37,20 @@ q {
 }
 
 hr {
-	background-color: #ccc;
+	background-color: $color-1;
 	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+	height: 2px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0;
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
 }
 
 ol {

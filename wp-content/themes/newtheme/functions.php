@@ -46,6 +46,7 @@ function newtheme_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
+		'utility' => esc_html__( 'Utility', 'newtheme' ),
 		'primary' => esc_html__( 'Primary', 'newtheme' ),
 	) );
 
