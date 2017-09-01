@@ -17,6 +17,10 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link href="https://fonts.googleapis.com/css?family=Lato|League+Script" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/44084dce97.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
@@ -39,7 +43,7 @@
 
 		<div class="header__hero">
 			<div class="header__container">
-				<h1>Pook</h1>
+				<h1>SubScript</h1>
 				<h3>Something in cursive.</h3>
 			</div>	
 		</div>

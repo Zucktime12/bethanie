@@ -3,7 +3,8 @@
 //--------------------------------------------------------------
 
 
-[class*="__container"] {
+[class*="__container"],
+#container {
     max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 25px;

@@ -1,69 +1,33 @@
-// Require dependencies
-var $ = require('jquery');
+(function($) {
 
-// Fire it up
-var Site = {
-	challengeElement: null,
-	context: null,
-
-	/**
-	 * Initialize site
-	 */
-	init: function() {
-		/**
-		 * Set the initial breakpoint context
-		 */
-		Site.challengeElement = document.querySelector('.breakpoint-context');
-		Site.challengeContext();
+	var Site = {
 
 		/**
-		 * Check breakpoint context on window resizing
-		 * Throttled/debounced for better performance
+		 * Initialize site
 		 */
-		$(window).resize(Site.debounce(function() {
-			Site.challengeContext();
-		}, 250));
-	},
+		init: function() {
+			/**
+			 * Set the initial breakpoint context
+			 */
+			//Site.challengeContext();
+		},
 
-	/**
-	 * Device targeting should be based on media queries in CSS,
-	 * we do not define this in scripts
-	 * Modified from http://davidwalsh.name/device-state-detection-css-media-queries-javascript
-	 */
-	challengeContext: function() {
-		var styles = window.getComputedStyle(Site.challengeElement),
-			index = parseInt(styles.getPropertyValue('z-index'), 10),
-			states = {
-				1: 'mobile',
-				2: 'tablet'
-			};
+	};
 
-		Site.context = states[index] || 'desktop';
-	},
+	$(document).ready(function() {
+		Site.init();
+	}).on('click', '.js-login-nav', function() {
+		$(this).addClass('active');
+		$('.js-login-content').addClass('active');
+		$('.js-registration-nav').removeClass('active');
+		$('.js-registration-content').removeClass('active');
+	}).on('click', '.js-registration-nav', function() {
+		$(this).addClass('active');
+		$('.js-registration-content').addClass('active');
+		$('.js-login-nav').removeClass('active');
+		$('.js-login-content').removeClass('active');
+	});
 
-	/**
-	 * Throttle/debounce helper
-	 * Modified from http://remysharp.com/2010/07/21/throttling-function-calls/
-	 */
-	debounce: function(fn, delay) {
-		var timer = null;
+	// Chain any click events here
 
-		return function() {
-			var context = this,
-				args = arguments;
-
-			clearTimeout(timer);
-
-			timer = setTimeout(function() {
-				fn.apply(context, args);
-			}, delay);
-		};
-	},
-
-};
-
-$(document).ready(function() {
-	Site.init();
-	Site.slick();
-});
-// Chain any click events here
+})(jQuery);

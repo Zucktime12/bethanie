@@ -1,3 +1,44 @@
 //--------------------------------------------------------------
 // Form Fields and Layout
 //--------------------------------------------------------------
+
+
+input,
+textarea {
+	border-radius: 5px;
+	outline: 0;
+	border: 1px solid $color-4;
+	color: $color-4;
+	padding: 8px;
+}
+
+.form-container {
+
+	.form-navigation {
+		&__login,
+		&__registration {
+			&.active {
+				background-color: blue;
+			}
+		}
+	}
+
+	.form-content {
+		&__login,
+		&__registration {
+			display: none;
+			&.active {
+				display: block;
+			}
+		}
+	}
+	
+	.woocomerce-form.login,
+	form.register {
+		border: 0;
+		max-width: 500px;
+		width: 90%; 
+		margin: 0 auto;
+	}
+
+}
