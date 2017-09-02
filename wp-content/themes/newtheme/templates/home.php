@@ -55,7 +55,7 @@ get_header();
 			</ul><!--/.products-->
 		</div>
 	</section>
-	<section class="shop-by-category">
+	<!-- <section class="shop-by-category">
 		<div class="shop-by-category__container">
 			<h2>Shop by Category</h2>
 			<div class="shop-by-category__all">
@@ -104,9 +104,7 @@ get_header();
 				</a>
 			</div>
 		</div>
-		
 	</section>
-	
 	<section class="another">
 		<div class="another__container">
 			<p>Kellee</p>
@@ -124,5 +122,10 @@ get_header();
 			<p>Brandon</p>
 			<p>Brandon</p>
 		</div>
-	</section>
+	</section> -->
 </div>
+
+
+<?php 
+get_footer(); 
+?>

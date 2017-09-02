@@ -5,40 +5,96 @@
 
 input,
 textarea {
-	border-radius: 5px;
+	border-radius: 3px;
 	outline: 0;
 	border: 1px solid $color-4;
 	color: $color-4;
 	padding: 8px;
 }
 
-.form-container {
+input[type=submit].woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .add_to_cart_button.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled] {
+	background-color: $color-2;
+	color: white;
+	border-radius: 3px;
+	padding: 10px 35px;
+	border: 2px solid $color-2;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-decoration: none;
+	letter-spacing: 1.1px;
 
-	.form-navigation {
-		&__login,
-		&__registration {
-			&.active {
-				background-color: blue;
-			}
-		}
+	&:hover {
+		color: $color-2;
+		background-color: white;
 	}
+}
 
-	.form-content {
-		&__login,
-		&__registration {
-			display: none;
-			&.active {
-				display: block;
-			}
-		}
-	}
-	
-	.woocomerce-form.login,
-	form.register {
-		border: 0;
+.login-page {
+	background: url('../images/bg.jpg') no-repeat center center fixed;
+	background-size: cover;
+	padding: 60px 0;
+
+	.form-container {
 		max-width: 500px;
-		width: 90%; 
+		width: 80%; 
 		margin: 0 auto;
-	}
+		background-color: white;
+		border-radius: 3px;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
 
+		.form-navigation {
+			display: flex;
+
+			h2 {
+				text-transform: uppercase;
+				padding: 10px 23px;
+				font-size: 20px;
+			}
+
+			&__login,
+			&__registration {
+				width: 50%;
+				background-color: $color-3;
+				box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+				&.active {
+					background-color: white;
+					box-shadow: none;
+				}
+			}
+
+			&__login {
+				border-top-left-radius: 3px;
+				box-shadow: inset -3px -3px 5px -3px rgba(0, 0, 0, 0.75);
+				&.active {
+					box-shadow: none;
+				}
+			}
+
+			&__registration {
+				border-top-right-radius: 3px;
+				box-shadow: inset 3px -3px 5px -3px rgba(0, 0, 0, 0.75);
+
+				&.active {
+					box-shadow: none;
+				}
+			}
+		}
+
+		.form-content {
+			&__login,
+			&__registration {
+				display: none;
+				&.active {
+					display: block;
+				}
+			}
+		}
+		
+		.woocomerce-form.login,
+		form.register {
+			border: 0;
+			margin: 0;
+			
+		}
+	}	
 }

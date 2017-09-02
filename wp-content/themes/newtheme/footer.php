@@ -14,7 +14,11 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
+		<div class="site-info site-info__container">
+
+
+			<h2>KELLEE</h2>
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
