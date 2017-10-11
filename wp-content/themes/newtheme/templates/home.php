@@ -11,9 +11,9 @@ get_header();
 ?>
 
 <div class="home-page">
-	<section class="featured-products">
-		<div class="featrued-products__container">
-			<ul class="products">
+	<section class="products">
+		<div class="products__container">
+			<ul class="products__list">
 				<?php 
 				$args = array( 'post_type' => 'product', 'posts_per_page' => 12 ); 
 				$loop = new WP_Query( $args ); 

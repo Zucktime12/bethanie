@@ -15,13 +15,13 @@ textarea {
 input[type=submit].woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .add_to_cart_button.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled] {
 	background-color: $color-2;
 	color: white;
-	border-radius: 3px;
 	padding: 10px 35px;
 	border: 2px solid $color-2;
 	text-transform: uppercase;
 	font-size: 14px;
 	text-decoration: none;
 	letter-spacing: 1.1px;
+	text-align: center;
 
 	&:hover {
 		color: $color-2;
