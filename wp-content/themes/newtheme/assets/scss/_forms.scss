@@ -12,7 +12,7 @@ textarea {
 	padding: 8px;
 }
 
-input[type=submit].woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .add_to_cart_button.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled] {
+input[type=submit].woocommerce #respond input#submit, .button, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .add_to_cart_button.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled] {
 	background-color: $color-2;
 	color: white;
 	border-radius: 3px;
@@ -27,6 +27,15 @@ input[type=submit].woocommerce #respond input#submit, .woocommerce a.button, .wo
 		color: $color-2;
 		background-color: white;
 	}
+}
+
+
+
+.button__container {
+	display: inline-block;
+	text-align: right;
+	white-space: nowrap;
+	width: 250px;
 }
 
 .login-page {

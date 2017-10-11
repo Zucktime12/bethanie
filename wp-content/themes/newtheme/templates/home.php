@@ -11,6 +11,17 @@ get_header();
 ?>
 
 <div class="home-page">
+	<section class="hero">
+		<div class="hero__container">
+			<div class="hero__text">
+				<h2>This is Stained Glass</h2>
+				<p>Stain Stain Stain</p>
+					<!-- <div class="button__container";> -->
+						<a class="button" href="<?php echo site_url( '/shop/' ) ?>">Shop Now</a>
+					<!-- </div> -->
+			</div>
+		</div>
+	</section>
 	<section class="featured-products">
 		<div class="featrued-products__container">
 			<ul class="products">
