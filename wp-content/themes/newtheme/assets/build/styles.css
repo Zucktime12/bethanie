@@ -787,7 +787,7 @@ textarea {
   color: #DAAA9D;
   padding: 8px; }
 
-input[type=submit].woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .add_to_cart_button.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled] {
+input[type=submit].woocommerce #respond input#submit, .button, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .add_to_cart_button.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled] {
   background-color: #DAAA9D;
   color: white;
   padding: 10px 35px;
@@ -797,9 +797,15 @@ input[type=submit].woocommerce #respond input#submit, .woocommerce a.button, .wo
   text-decoration: none;
   letter-spacing: 1.1px;
   text-align: center; }
-  input[type=submit].woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .add_to_cart_button.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit.disabled:hover, .woocommerce #respond input#submit:disabled:hover, .woocommerce #respond input#submit:disabled[disabled]:hover, .woocommerce a.button.disabled:hover, .woocommerce a.button:disabled:hover, .woocommerce a.button:disabled[disabled]:hover, .woocommerce button.button.disabled:hover, .woocommerce button.button:disabled:hover, .woocommerce button.button:disabled[disabled]:hover, .woocommerce input.button.disabled:hover, .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover {
+  input[type=submit].woocommerce #respond input#submit:hover, .button:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .add_to_cart_button.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit.disabled:hover, .woocommerce #respond input#submit:disabled:hover, .woocommerce #respond input#submit:disabled[disabled]:hover, .woocommerce a.button.disabled:hover, .woocommerce a.button:disabled:hover, .woocommerce a.button:disabled[disabled]:hover, .woocommerce button.button.disabled:hover, .woocommerce button.button:disabled:hover, .woocommerce button.button:disabled[disabled]:hover, .woocommerce input.button.disabled:hover, .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover {
     color: #DAAA9D;
     background-color: white; }
+
+.button__container {
+  display: inline-block;
+  text-align: right;
+  white-space: nowrap;
+  width: 250px; }
 
 .login-page {
   background: url("../images/bg.jpg") no-repeat center center fixed;
@@ -943,35 +949,106 @@ input[type=submit].woocommerce #respond input#submit, .woocommerce a.button, .wo
       margin-top: 10px;
       font-size: 12px; }
 
-.home-page h2 {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 22px;
-  font-family: "Lato", sans-serif; }
-
-.home-page .hero {
-  background: url("../images/bg.jpg") no-repeat center center fixed;
-  background-size: cover;
-  color: #FFF;
-  padding: 100px 0; }
-  .home-page .hero__intro {
-    display: flex;
-    flex-wrap: wrap; }
-    @media (min-width: 720px) {
-      .home-page .hero__intro {
-        flex-wrap: nowrap; } }
-  .home-page .hero__intro-single {
-    width: 100%;
-    padding: 10px 0; }
-    @media (min-width: 720px) {
-      .home-page .hero__intro-single {
-        width: 33.33%;
-        padding: 0 20px 0 0; } }
-    @media (min-width: 720px) {
-      .home-page .hero__intro-single:last-child {
-        padding: 0; } }
-    .home-page .hero__intro-single i {
-      display: inline-block;
-      font-size: 20px; }
-    .home-page .hero__intro-single h2 {
-      padding-left: 10px; }
+.home-page {
+  /*.hero-container h2 {
+		text-align: center;
+	}*/ }
+  .home-page h2,
+  .home-page p,
+  .home-page a {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: "Lato", sans-serif; }
+  @media (min-width: 401px) {
+    .home-page h2,
+    .home-page p {
+      display: block; } }
+  .home-page .hero {
+    background: url("../images/bg-hero.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #FFF;
+    padding: 100px 0; }
+    .home-page .hero__intro {
+      display: flex;
+      flex-wrap: wrap; }
+      @media (min-width: 720px) {
+        .home-page .hero__intro {
+          flex-wrap: nowrap; } }
+    .home-page .hero__intro-single {
+      width: 100%;
+      padding: 10px 0; }
+      @media (min-width: 720px) {
+        .home-page .hero__intro-single {
+          width: 33.33%;
+          padding: 0 20px 0 0; } }
+      @media (min-width: 720px) {
+        .home-page .hero__intro-single:last-child {
+          padding: 0; } }
+      .home-page .hero__intro-single i {
+        display: inline-block;
+        font-size: 20px; }
+      .home-page .hero__intro-single h2 {
+        padding-left: 10px; }
+  .home-page div.hero__text {
+    width: 70%;
+    text-align: right;
+    margin: 0 0 0 auto; }
+  .home-page .hero__text a {
+    width: 210px;
+    margin-top: 20px; }
+  .home-page .featured-products {
+    padding: 60px 0 40px; }
+    .home-page .featured-products .products {
+      display: flex;
+      flex-wrap: wrap; }
+      @media (min-width: 480px) {
+        .home-page .featured-products .products {
+          flex-wrap: nowrap; } }
+    .home-page .featured-products .type-product {
+      width: 100%;
+      padding-bottom: 20px; }
+      @media (min-width: 480px) {
+        .home-page .featured-products .type-product {
+          width: 48%;
+          margin: 0 1%; } }
+      @media (min-width: 720px) {
+        .home-page .featured-products .type-product {
+          width: 23%;
+          margin: 0 1%; } }
+      .home-page .featured-products .type-product .onsale {
+        position: absolute;
+        background-color: blue;
+        border-radius: 100%; }
+      .home-page .featured-products .type-product img {
+        width: 100%; }
+      .home-page .featured-products .type-product small {
+        display: block; }
+      .home-page .featured-products .type-product a.add_to_cart_button {
+        display: inline-block; }
+  .home-page .shop-by-category {
+    padding: 100px 0; }
+    .home-page .shop-by-category a {
+      display: inline-block; }
+    .home-page .shop-by-category h2 {
+      padding-bottom: 30px; }
+    .home-page .shop-by-category__all {
+      display: flex;
+      justify-content: space-between; }
+    .home-page .shop-by-category__single {
+      width: 14%; }
+  .home-page .featured-sellers {
+    background-color: #E6C9BE;
+    padding: 100px 0;
+    color: #FFF; }
+    .home-page .featured-sellers h2 {
+      padding-bottom: 30px; }
+    .home-page .featured-sellers__all {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+    .home-page .featured-sellers__single {
+      width: 30%; }
+  .home-page .again {
+    background: url("../images/bg.jpg") no-repeat center center;
+    background-size: cover; }
