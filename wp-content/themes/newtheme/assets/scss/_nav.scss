@@ -6,43 +6,72 @@
 
 	a {
 		text-decoration: none;
-		text-transform: uppercase;
 		font-size: 14px;
 		padding: 10px;
 		letter-spacing: 1.1px;
 		display: block;
-		color: $color-5;
+	}
 
-		&:hover {
+	&__utility {
+		background-color: $color-3;
+
+		.menu {
+			ul {
+				color: $white;
+				display: flex;
+				justify-content: flex-end;
+
+				li {
+					a {
+						color: $white; 
+
+						&:hover {
+							color: $color-2;
+						}
+					}
+				}
+
+				i {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	&__hero {
+		text-align: center;
+		padding: 40px 0;
+
+		h1 {
+			font-size: 30px;
+			color: $color-3;
+		}
+
+		h3 {
+			font-size: 20px;
 			color: $color-2;
 		}
 	}
 
-	&__utility {
-		border-bottom: 1px solid $color-5;
-	}
-
-	&__hero {
-		padding: 60px 0;
-
-		h1 {
-			font-family: $font-head;
-			text-transform: uppercase;
-			text-align: center;
-			font-size: 60px;
-			padding-bottom: 10px;
-		}
-
-		h3 {
-			font-family: $font-fancy;
-			text-align: center;
-			font-size: 30px;
-		}
-	}
-
 	&__nav {
-		border-top: 1px solid $color-5;
+		background-color: $color-2;
+
+		ul {
+			display: flex;
+			justify-content: center;
+		}
+
+		a {
+			color: $white;
+			text-transform: uppercase;
+
+			&:hover {
+				color: $color-3;
+			}
+		}
 	}
+
+	
 }
 
 .site-footer {

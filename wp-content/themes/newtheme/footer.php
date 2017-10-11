@@ -17,8 +17,6 @@
 		<div class="site-info site-info__container">
 
 
-			<h2>KELLEE</h2>
-
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
