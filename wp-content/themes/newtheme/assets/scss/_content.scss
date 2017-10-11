@@ -21,19 +21,11 @@
 .products, .woocommerce .products ul, .woocommerce ul.products {
 	padding: 60px 0 40px;
 	display: flex;
-	flex-wrap: nowrap;
-
-	@include breakpoint($break-small) {
-		flex-wrap: wrap;
-	}
+	flex-wrap: wrap;
 
 	&__list {
 		display: flex;
-		flex-wrap: nowrap;
-
-		@include breakpoint($break-small) {
-			flex-wrap: wrap;
-		}
+		flex-wrap: wrap;
 	}
 
 	.product, li.product {
@@ -127,6 +119,7 @@
 			display: block;
 			width: 100%;
 			text-align: center;
+			font-size: 16px;
 			color: $color-3;
 		}
 

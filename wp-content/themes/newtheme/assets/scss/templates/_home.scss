@@ -55,114 +55,16 @@
 				padding-left: 10px;
 			}
 		}
-	}
 
-	/*.hero-container h2 {
-		text-align: center;
-	}*/
-	
-	div.hero__text {
-		width: 70%;
-		text-align: right;
-		margin: 0 0 0 auto;
-	}
+		&__text {
+			width: 70%;
+			text-align: right;
+			margin: 0 0 0 auto;
 
-	.hero__text a {
-		width: 210px;
-		margin-top: 20px;
-	}
-
-
-
-	.featured-products {
-		padding: 60px 0 40px;
-
-		.products {
-			display: flex;
-    		flex-wrap: wrap;
-
-    		@include breakpoint($break-small) {
-				flex-wrap: nowrap;
+			a {
+				width: 210px;
+				margin-top: 20px;
 			}
 		}
-
-		.type-product {
-			width: 100%;
-			padding-bottom: 20px;
-
-			@include breakpoint($break-small) {
-				width: 48%;
-				margin: 0 1%;
-			}
-
-			@include breakpoint($break-medium) {
-				width: 23%;
-				margin: 0 1%;
-			}
-
-			.onsale {
-				position: absolute;
-				background-color: blue;
-				border-radius: 100%;
-			}
-
-			img {
-				width: 100%;
-			}
-
-			small {
-				display: block;
-			}
-
-			a.add_to_cart_button {
-				display: inline-block;
-			}
-		}
-	}
-		
-	.shop-by-category {
-		padding: 100px 0;
-
-		a {
-			display: inline-block;
-		}
-
-		h2 {
-			padding-bottom: 30px;
-		}
-
-		&__all {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		&__single {
-			width: 14%;
-		}
-	}
-
-	.featured-sellers {
-		background-color: $color-1;
-		padding: 100px 0;
-		color: $white;
-
-		h2 {
-			padding-bottom: 30px;
-		}
-
-		&__all {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-
-		&__single {
-			width: 30%;
-		}
-	}
-
-	.again {
-		background: url('../images/bg.jpg') no-repeat center center;
-		background-size: cover;
 	}
 }
