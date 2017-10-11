@@ -43,8 +43,8 @@
 
 		<div class="header__hero">
 			<div class="header__container">
-				<h1>SubScript</h1>
-				<h3>Something in cursive.</h3>
+				<h1>Bethanie's</h1>
+				<h3>Stained Glass</h3>
 			</div>	
 		</div>
 
