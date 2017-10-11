@@ -37,7 +37,17 @@
 
 		<div class="header__utility">
 			<div class="header__container">
-				<?php wp_nav_menu( array( 'theme_location' => 'utility', 'menu_id' => 'utility-menu' ) ); ?>
+				<div id="utility-menu" class="menu">
+					<ul>
+
+						<li><a href="/"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+
+						<li><a href="<?php echo site_url( '/my-account/' ) ?>"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+						
+						<li><a href="<?php echo site_url( '/cart/' ) ?>"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+						
+					</ul>
+				</div>
 			</div>	
 		</div>
 

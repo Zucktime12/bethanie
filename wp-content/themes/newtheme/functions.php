@@ -46,7 +46,6 @@ function newtheme_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'utility' => esc_html__( 'Utility', 'newtheme' ),
 		'primary' => esc_html__( 'Primary', 'newtheme' ),
 	) );
 
@@ -118,6 +117,9 @@ function newtheme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'newtheme_scripts' );
+
+
+show_admin_bar( false );
 
 /**
  * Implement the Custom Header feature.
